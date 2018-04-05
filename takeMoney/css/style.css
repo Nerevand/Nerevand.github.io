@@ -1,0 +1,628 @@
+/*________________________section setings_______________________*/
+body {
+    margin: 0;
+    background: url(../img/fon.jpeg);
+    background-size: contain; 
+    font-weight: bold;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background: url(../img/header.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.wrapper { 
+    width: 100%;
+    height: 600px; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.faq {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 210px;
+    margin-top: 30px;
+}
+
+/*________________________Header-setings_______________________________*/
+.hLeft {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hLeft > h1 {
+    font-size: 40px;
+    cursor: default;
+    text-shadow: 0 0 20px transparent;
+    color: transparent;
+    animation: shadows 10s infinite ease-in;
+    }
+  
+  @keyframes shadows {
+    10% {
+      text-shadow: 0 0px 1px hsl(0, 0%, 0%);
+    }
+    20% {
+        text-shadow: 0 0px 1px hsl(251, 100%, 22%);
+      }
+    30% {
+        text-shadow: 0 0px 1px hsl(140, 98%, 39%);
+      }
+    40% {
+        text-shadow: 0 0px 1px hsl(355, 92%, 39%);
+      }
+     50% {
+        text-shadow: 0 0px 1px hsl(54, 100%, 40%);
+      }
+    60% {
+        text-shadow: 0 0px 1px hsl(303, 95%, 37%);
+      }
+    70% {
+        text-shadow: 0 0px 1px hsl(300, 1%, 19%);
+      }
+    80% {
+        text-shadow: 0 0px 1px hsl(133, 70%, 25%);
+      }
+    90% {
+        text-shadow: 0 0px 1px hsl(0, 63%, 50%);
+      }
+     
+  }
+
+.hCenter {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hCenter nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hCenter li {
+    display: inline-block;
+    width: 100px;
+    margin-right: 5%;
+    text-align: center; 
+}
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.hRight {
+    width: 10%;
+    height: 100%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+.logIn {
+    width: 50%;
+    height: 30px;
+    border: 2px solid rgb(229, 255, 0);
+    border-radius:  25%;
+    cursor: pointer;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+.logIn:hover {
+    background-color: rgb(255, 255, 0);
+}
+/*_________________________________wrapper____________________________*/
+.money {
+    width: 90%;
+    height: 450px;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../img/copilka.png) no-repeat;
+    background-size: contain; 
+    margin-bottom: 25px; 
+}
+.inpts {
+    width: 40%;
+    background-color: rgba(218, 218, 218, 0.4);
+}
+.cash {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0; 
+}
+.inpt {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+input[type=range] {
+    -webkit-appearance: none;
+	width: 300px;
+	height: 20px;
+	padding: 0;
+	box-shadow: inset 0 0 0 2px #2D7CFA;
+	background: rgb(238, 255, 1);
+	overflow: hidden;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width:20px;
+	height:20px;
+	border: 2px solid #818181;
+	background: #fff;
+	box-shadow:
+	-10px 0 #0400db, -26px 0 #0400db, -39px 0 #0400db,
+	-52px 0 #0400db, -65px 0 #0400db, -78px 0 #0400db,
+	-91px 0 #0400db, -104px 0 #0400db, -117px 0 #0400db,
+	-130px 0 #0400db, -143px 0 #0400db, -156px 0 #0400db,
+	-169px 0 #0400db, -182px 0 #0400db, -195px 0 #0400db,
+	-208px 0 #0400db, -221px 0 #0400db, -234px 0 #0400db,
+    -247px 0 #0400db, -260px 0 #0400db, -273px 0 #0400db, 
+    -286px 0 #0400db, -299px 0 #0400db, -312px 0 #0400db, 
+    -325px 0 #0400db, -338px 0 #0400db, -351px 0 #0400db,
+    -364px 0 #0400db, -377px 0 #0400db, -390px 0 #0400db, 
+    -403px 0 #0400db, -416px 0 #0400db, -429px 0 #0400db,
+    -442px 0 #0400db, -455px 0 #0400db, -468px 0 #0400db,
+    -481px 0 #0400db, -494px 0 #0400db;
+} 
+.howMuch {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.grn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    font-size: 17px;
+    color: green;
+}
+.textValue {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+p {
+    margin: 0;
+}
+
+/*____________________________DAYS_________________________*/
+.days {
+    width: 100%;
+    height: 100px; 
+}
+.howLong {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*_________________________________credit_______________________________*/
+.info {
+    width: 25%;
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(218, 218, 218, 0.4);
+}
+.credit {
+    width: 100%;
+    height: 200px; 
+}
+/*___________________________Btn take it ____________________*/
+.takeIt {
+    width:45%;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.takeIt:hover {
+    background-color: rgb(89, 197, 0);
+}
+/*_____________________________________FAQ______________________________*/
+
+.questList {
+    background-color: rgba(0, 26, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
+    margin: 0.5%;
+    width: 85%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.questList:nth-child(odd){
+    background-color: rgba(7, 21, 151, 0.5); 
+    width: 82%;
+}
+.questList:hover:nth-child(odd) {
+    background-color: rgba(132, 245, 2, 0.5); 
+}
+.qList { 
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.qList:hover {
+    background-color: rgba(198, 204, 255, 0.5);
+}
+.hidden {
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    display: none;
+    align-items: center;
+}
+.showMore {
+    width: 180px;
+    height: 25px;
+    border: 2px solid rgb(38, 23, 255);
+    border-radius: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.showMore:hover {
+    cursor: pointer;
+    background-color: rgb(80, 106, 255);
+    color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
+}
+.showMoreBtnImg {
+    width: 30px;
+    height: 100%;
+    background: url(../img/plus.png) no-repeat;
+    background-size: 100% 100%;
+}
+/*______________________________________Footer_____________________________*/
+.fTop {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    background: url(../img/footer.png) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+}
+.fLeft {
+    width: 20%;
+    height: 100%; 
+}
+.fLeft li {
+    list-style-type: none;
+}
+li a:hover {
+    color: yellow;
+}
+.fCenter {
+    width: 60%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+.botButton {
+    border: 2px solid rgb(255, 255, 0);
+    padding: 1%;
+    border-radius: 10%;
+    color: #fff;
+    margin: 1%;
+}
+.botButton:hover {
+    background-color: rgb(255, 255, 0);
+    border-radius: 10%;
+    color: #000;
+    cursor: pointer;
+}
+.fBottom {
+    width: 20%;
+    height: 100%;
+    text-align: right; 
+}
+.fBottom p {
+    margin: 2%;
+}
+
+/*________________________________________________________*/
+.fBot {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(75, 75, 75);
+}
+
+.bankImg {
+    width: 10%;
+    height: 100%;
+}
+.bankImgZero {
+    background: url(../img/visa.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bankImgFirst {
+    background: url(../img/mastercard.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bankImgSec {    
+    width: 15%;
+    background: url(../img/qiwi.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bankImgThird {
+    background: url(../img/webmoney.png) no-repeat;
+    background-size: 100% 100%;    
+}
+.bankImgFour {
+    background: url(../img/privat24.png) no-repeat;
+    background-size: 100% 100%;    
+}
+/*___________________________________МЕДІА ЗАПИТИ___________________________________*/
+@media (min-width: 1042px) and (max-width: 1280px) {
+input[type=range] {
+	width: 250px;
+}
+}
+
+@media screen and (min-width: 804px) and (max-width: 1042px) {
+    p {
+        font-size: 14px;
+    }
+    li a{
+        font-size: 14px;
+    }
+    header {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hCenter li {
+        width: 150px;
+    }
+
+    .hRight {
+        width: 20%;
+    }
+
+    .logIn {
+        color: #fff;
+    }
+
+    .logIn:hover {
+        color: rgb(0, 0, 0);
+    }
+    
+    .money {
+        width: 100%;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    input[type=range] {
+        width: 200px;
+    }
+    .info {
+    width: 35%;
+    }
+
+    footer {
+        height: 200px;
+    }
+    .fTop {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fLeft {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .fLeft li {
+        list-style-type: none;
+        display: inline;
+        margin: 15px;
+    }
+    .fCenter {
+        width: 50%;
+        height: 90px;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .botButton {
+        border: 2px solid rgb(255, 255, 0);
+        padding: 1%;
+        border-radius: 10%;
+        color: #fff;
+        margin: 1%;
+    }
+    .fBottom {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .fBottom p {
+        text-align: center;
+    }
+    .fBot {
+      height: 70px;  
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 804px) {
+    p {
+        font-size: 13px;
+    }
+    li a{
+        font-size: 13px;
+    }
+    header {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hLeft {
+        width: 100%;
+        border: 1px solid red;
+    }
+    .hCenter nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hCenter li {
+        display: inline-block;
+        width: 100px;
+        margin-right: 5%;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .hCenter nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hCenter li {
+        display: inline-block;
+        width: 100px;
+        margin-right: 5%;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .hRight {
+        width: 20%;
+    }
+
+    .logIn {
+        color: #fff;
+    }
+
+    .logIn:hover {
+        color: rgb(0, 0, 0);
+    }
+    
+    .money {
+        width: 100%;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    input[type=range] {
+        width: 200px;
+    }
+    .info {
+        width: 35%; 
+    }
+    .inpts {
+        width: 63%;
+    }
+    .takeIt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq {
+        height: 350px;
+    }
+    .questList {
+        width: 100%;
+    }
+    .questList:nth-child(odd) {
+        width: 100%;
+    }
+    footer {
+        height: 200px;
+    }
+    .fTop {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fLeft {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .fLeft li {
+        list-style-type: none; 
+        display: inline;
+        margin: 5px;
+    }
+    .fCenter {
+        width: 50%;
+        height: 90px;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .botButton {
+        border: 2px solid rgb(255, 255, 0);
+        padding: 1%;
+        border-radius: 10%;
+        color: #fff;
+        margin: 1%;
+    }
+    .fBottom {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .fBottom p {
+        text-align: center;
+    }
+    .fBot {
+      display: none;
+    }
+}
