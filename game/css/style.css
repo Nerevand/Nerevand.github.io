@@ -100,11 +100,14 @@
 	font-weight: bold;
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 .lev {	
 	width: 60%;
 	height: 100%; 
 	font-weight: bold;
+	display: flex; 
+	align-items: center;
 }
 .bot {
 	width: 100%;
