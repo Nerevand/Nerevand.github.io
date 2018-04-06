@@ -1179,7 +1179,7 @@ var elevenStageQuestion = {
                 nameQuest.numb = rand;
                 break;
             case 4:
-                nameQuest.name = "Який інформації не містить штрихкод?";
+                nameQuest.name = "Якої інформації не містить штрихкод?";
                 nameQuest.numb = rand;
                 break;
             case 5:

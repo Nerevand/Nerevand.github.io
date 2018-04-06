@@ -7,14 +7,13 @@ var levelBack = document.getElementsByClassName('level');
 let valueOne = true;
 let valueTwo = true;
 let valueThree = true;
-var stop = true;
 
 function bacg(n) {
     let x = 15;
     let i = 15 - n;
     while (x - n >= 0) {
         if (n === 1) {
-            levelBack[i].style.backgroundColor = '#FFFF00'; // жовтий	
+            levelBack[i].style.backgroundColor = '#FFFF00'; // жовтий   
         } else {
             levelBack[i + 1].style.backgroundColor = '#ff4000'; // оранж
             levelBack[i].style.backgroundColor = '#FFFF00'; // жовтий
@@ -41,25 +40,7 @@ function backgClear() {
     hintTwo.style.backgroundColor = "#fff";
     hintThree.style.backgroundColor = "#fff";
 }
-/*
-function stopwatch(stay) {
-	 let sec = 0;
-	 let asd = setInterval(tick, 1000);
 
-    function tick() {
-        sec++;
-        if (sec === 5) {
-            let audio = new Audio();
-            audio.src = 'think.mp3';
-   			 audio.play(); 
-        }
-    if(stay === 5){
-		clearInterval(asd);
-		sec = 0;
-	}
-    }
-}
-*/
 function win() {
     let audio = new Audio();
     audio.src = 'audio/win.mp3';
@@ -269,6 +250,7 @@ function stageUp() {
     ansD.innerHTML = answer.four.name;
 }
 stageUp();
+
 ansverA.onclick = function() {
     for (let i = 0; i < 1000; i++) {
         setTimeout(function() {
