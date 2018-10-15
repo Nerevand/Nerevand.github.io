@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#root {
+    margin-top: 1vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+form {
+    display: flex;
+    flex-direction: column;
+} 
+h1{
+    font-size: 2.2vw;
+}
+h2{
+    font-weight: 300;
+    margin-top: -1vw;    
+} 
+.group {
+    display: flex;
+    flex-direction: column;
+
+}
+.user { 
+    height: 2vw;
+    position: absolute;
+    margin-left: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user > h3:hover {
+    color: #f67c7c;
+    cursor: pointer;
+}
+.exit {
+    margin-left: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.btn{
+    margin-top: 0.5vw;
+    margin-bottom: 2vw;
+    width: 15vw;
+    font-size: 1.3vw;
+    border-radius: 0.6vw;
+    cursor: pointer;
+}
+.btn:active{
+    color: red; 
+}
+#list {
+    list-style-type: none; 
+    width: 40vw;
+}
+#all-list {
+    list-style-type: none; 
+    width: 40vw;
+}
+li{ 
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.1488vw;
+}
+.paragraph{
+    width: 90%;
+    font-size: 1.5vw; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+}
+.baton:hover{
+    background-color: #d1d1d1;  
+    border-radius: 0.4vw;  
+}
+.share-it {
+    width: 20%;
+}
+.task-text{
+    margin-top: 0.2vw;
+}
+img{
+    width: 6%;
+    cursor: pointer;
+}
+#input{
+    padding: 0.7vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.2vw;
+    width: 29.7%;
+    height: 1vw;
+} 
+#editor{
+    padding: 0.7vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.2vw;
+    width: 29.7%;
+    height: 1vw;
+}
+.back,
+.save{
+    font-size: 1vw;
+    border-radius: 0.6vw;
+    width: 5vw;
+    border: none;
+    cursor: pointer;
+}
+.place {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.btns {
+    font-size: 1vw;
+    border-radius: 0.6vw;
+    width: 5vw;
+    border: none;
+    cursor: pointer;
+}
