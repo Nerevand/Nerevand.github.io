@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Brush; 
+    src: url(../fonts/fon.otf); 
+   }
+@font-face {
+    font-family: Alex; 
+    src: url(../fonts/AlexBrush-Regular.ttf); 
+   }
+.header {    
+  height: 700px;
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+}
+p{
+    font-weight: 500;
+}
+.my-name{
+    font-family: Brush; 
+}
+.header > h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.type-user {
+    background-color: #eeeeef;
+}
+.users {
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+.card {
+    background-color: inherit;
+}
+.my-img {
+    width: 40px;
+    height: 35px; 
+}
+.sec-img {
+    height: 330px;
+}
+.template{
+    background-color: #eeeeef;
+}
+.logo{
+    width: 50%;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.logo h2{
+    margin-left: 2%;
+}
+.news {
+    background-color: #eeeeef;
+}
+.wrap > img {
+    width: 7%;
+    height: 10%;
+}
+.last img {
+    width: 40%;
+}
+.last .d-flex{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.last .card-body{
+    margin-left: 2rem;
+}
+.last p{
+    margin-top: 5rem; 
+}
+.last a{
+    margin-top: 5rem; 
+}
+.main-img{
+    border-radius: 25%;
+}
+.footer{
+    background-color: #50c3af;
+}
+ 
+.footer .col-12 img{
+    width: 6%;
+    height: 50%;
+}
+
+@media (max-width: 1199px) {
+    .header {
+        height: 600px;
+    }
+    .sec-img {
+    height: 260px;
+    }
+    .footer h3{
+        font-size: 25px;
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        height: 550px;
+    }
+    .two-img .card-title{
+        font-size: 20px;
+    }
+    .sec-img {
+        height: 200px;
+    }
+    .template .d-flex{
+        width: 450px;
+    }
+    .news .wrap{
+        width: 300px;
+    }
+    .main-img{
+        height: 300px;
+    }
+    .last h3{
+        font-size: 21px;
+    }
+    .last .card-body{
+        margin-left: 2rem;
+    }
+    .last p{
+        margin-top: 3rem; 
+    }
+    .last a{
+        margin-top: 3rem; 
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        height: 500px;
+    }
+    .users {
+        width: 150px;
+    }
+    .help-text{
+        font-size: 18px;
+    }
+    .sec-img { 
+        width: 100%;
+        height: 300px;
+    }
+    .last {
+        display: none;
+    }
+}
