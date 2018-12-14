@@ -1,0 +1,123 @@
+body {
+    background-color: aqua;
+    font-family: "Avenir LT W01_65 Medium1475532",Arial,Helvetica,sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+#header {
+    width: 100%;
+    height: 5vw;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;    
+    display: flex;   
+    justify-content: center;
+    position: fixed;
+}
+.center {
+    width: 90%; 
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;    
+    display: flex;   
+    justify-content: space-between;
+}
+#block-stars {
+    width: auto;
+    height: auto; 
+    position: absolute;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;    
+    display: flex;   
+    flex-direction: column;
+} 
+h1 {
+    color: rgb(255, 187, 0);
+    padding: 1vw; 
+    font-size: 2.35vw;
+}
+.first4 {
+    color: blue;
+}
+#stars {
+    width: auto;
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;    
+    display: flex;             
+    justify-content: center;
+    align-items: center; 
+}
+#reversed {   
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;    
+    display: -webkit-flex;    
+    display: flex;             
+    flex-direction: column; 
+}
+#new-window {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1vw;
+} 
+#excelent {
+    display: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.77vw;
+}
+.one-star-title { 
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;    
+    display: flex;   
+    align-items: center; 
+    margin-top: 1vw;
+}
+.one-star-title > img {
+    width: 1.3vw;
+    height: 1.3vw;
+}
+.one-star-title > p{
+    font-size: 1.2vw;
+}
+.five-stars { 
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;    
+    display: flex;   
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; 
+    padding: 0; 
+}
+.five-stars > img {
+    width: 1.3vw;
+    height: 1.3vw;
+    background-color: green;
+    margin: .1vw;
+}
+
+
+.test {
+    width: 100%;
+    height: 1500px;
+}
