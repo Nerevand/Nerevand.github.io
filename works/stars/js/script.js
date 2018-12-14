@@ -19,6 +19,8 @@ window.onscroll = function () {
     } else {
         exc.style.display = 'none';
         stars.style.width = '15vw';
+        stars.style.justifyContent = 'center';
+        stars.style.alignItems = 'center';
         block.style.flexDirection = 'column';
         rev.style.flexDirection = 'column';
         rev.style.width = '10vw'; 
