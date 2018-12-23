@@ -13,12 +13,7 @@ let cars = [
         model: `Land Rover Range Rover Sport 2018`,
         preview: `img/rover.png`,
         price: '78 132 €'
-    },
-    {
-        model: `Bentley Bentayga Diesel 2018`,
-        preview: `img/bentley.png`,
-        price: '215 000 €'
-    },
+    }, 
     {
         model: `Hyundai Tucson II 2016`,
         preview: `img/tucson2.jpg`,
@@ -83,12 +78,7 @@ let cars = [
         model: `Lamborghini Huracan 2016`,
         preview: `img/huracan.jpg`,
         price: '210 000 €'
-    },
-    {
-        model: `Mercedes-Benz Klasa G W463 2017`,
-        preview: `img/gelik.jpg`,
-        price: '370 000 €'
-    },
+    }, 
     {
         model: `Ferrari 488 2015`,
         preview: `img/488.jpg`,

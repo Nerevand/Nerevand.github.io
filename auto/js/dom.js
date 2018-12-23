@@ -66,11 +66,11 @@ area.className = 'area';
 let navPlaceForText = document.createElement('div');    //nav-center
     navPlaceForText.className = 'nav-center';
 let h1 = document.createElement('h1');                  //h1
-    h1.innerText = `«Автохаус Львів»`;
+    h1.innerText = `«AUTO MOTIVE»`;
 let navH3 = document.createElement('h3');               //h3
     navH3.innerText = 'Ми готові зробити Ваше життя простішим!';
 let navParagraph = document.createElement('p');
-    navParagraph.innerText = 'Відшукайте натхнення та подаруйте собі комфорт і незабутні відчуття під час керування автомобілем. «Автохаус Львів» - автосалон нового формату, де на першому місці виключно турбота про клієнтів та гарантія якості'
+    navParagraph.innerText = 'Відшукайте натхнення та подаруйте собі комфорт і незабутні відчуття під час керування автомобілем. «Automotive Львів» - автосалон нового формату, де на першому місці виключно турбота про клієнтів та гарантія якості'
     root.appendChild(area);
     area.appendChild(navPlaceForText);
     navPlaceForText.appendChild(h1);
@@ -110,21 +110,25 @@ function show(n){
     placeForCars.innerText = '';
 for(let i = n; i < n+4; i++){
     let block = document.createElement('div');
-        block.className = 'block';
-        block.style.transition = '3s';
+        block.className = 'block card'; 
     let img = document.createElement('img');
+        img.className = 'card-img-top';
         img.src = cars[i].preview;
+        img.alt = `car image cap`
     let text = document.createElement('div');
-        text.className = 'placeForH';
-    let model = document.createElement('h4');
+        text.className = 'placeForH card-body';
+
+    let model = document.createElement('h5');
+        model.className = 'card-text';
         model.innerText = cars[i].model;
-    let price = document.createElement('h4');
+    let price = document.createElement('h5');
+        price.className = 'card-text';
         price.innerText = cars[i].price;
     placeForCars.appendChild(block);
     block.appendChild(img);
     block.appendChild(text);
     text.appendChild(model);
-    text.appendChild(price);
+    text.appendChild(price); 
 }
 }
 show(0);
@@ -160,38 +164,38 @@ section.appendChild(text);
 text.appendChild(parentList);
 text.appendChild(childList);
 section.appendChild(placeForCars); 
-let max = 12;
-function circle(n=12){
+let max = 9;
+function circle(n=9){
     placeForCars.innerText = '';
     for(let i = 0; i < n; i++){
         let block = document.createElement('div');
-            block.className = 'card col-sm-6 col-md-6 col-lg-4 col-xl-3';
-            block.style.width = '18rem';
-        let img = document.createElement('img');
-            img.className = 'card-img-top';
-            img.alt = cars[i].model;
-            img.src = cars[i].preview; 
-        let text = document.createElement('div');
-            text.className = 'card-body';
-        let model = document.createElement('h6');
-            model.className = 'card-title';
-            model.innerText = cars[i].model;
-        let price = document.createElement('h6');
-            price.className = 'card-text';
-            price.innerText = cars[i].price;
+            block.className = 'block card';  
+            let img = document.createElement('img');
+                img.className = 'card-img-top';
+                img.src = cars[i].preview;
+                img.alt = `car image cap`
+            let text = document.createElement('div');
+                text.className = 'placeForH card-body';        
+            let model = document.createElement('h5');
+                model.className = 'card-text';
+                model.innerText = cars[i].model;
+            let price = document.createElement('h5');
+                price.className = 'card-text';
+                price.innerText = cars[i].price;;
         placeForCars.appendChild(block);
         block.appendChild(img);
         block.appendChild(text);
         text.appendChild(model);
         text.appendChild(price);
-    }  
+    }
+ 
 }
 circle();
 let btn = document.createElement('div');
     btn.className = 'btn-all-list btn btn-light';
     btn.innerText = 'переглянути ще';
     btn.onclick = function(){
-        max += 4;
+        max += 3;
         circle(max);
     };
     section.appendChild(btn);
@@ -207,7 +211,7 @@ let line = document.createElement('div');               //line
 let text = document.createElement('div');
     text.className = 'aboutText';
 let textUp = document.createElement('p');
-    textUp.innerText = `«Автохаус Львів» пропонує широкий спектр послуг з приводу купівлі, оформлення та подальшого обслуговування вживаних автомобілів. Ексклюзивні моделі авто і чітко вказані рік та пробіг – це наша перевага задля Вашої довіри. Асортимент послуг компанії:`;
+    textUp.innerText = `«Automotive Львів» пропонує широкий спектр послуг з приводу купівлі, оформлення та подальшого обслуговування вживаних автомобілів. Ексклюзивні моделі авто і чітко вказані рік та пробіг – це наша перевага задля Вашої довіри. Асортимент послуг компанії:`;
 let list = document.createElement('ul');
 let l1 = document.createElement('li');
 l1.innerText = 'Продаж вживаних автомобілів відомих марок з Європи та північної Америки;'; 
@@ -253,7 +257,7 @@ function doing(){
 let section = document.createElement('section');        //section
     section.className = 'doing';
 let secH2 = document.createElement('h2');               //h2
-    secH2.innerText = 'чим займається «автохаус» Україна?';
+    secH2.innerText = 'чим займається «Automotive» Україна?';
 let line = document.createElement('div');               //line
     line.className = 'line';
 let textOne = document.createElement('p');
@@ -392,9 +396,9 @@ let h4 = document.createElement('h3');
     h4.innerText = 'контакти';
 let ul2 = document.createElement('ul');
 let li5 = document.createElement('li');
-    li5.innerText = '+38 (096) 090 77 00';
+    li5.innerText = '+38 (096) 123 45 67';
 let li6 = document.createElement('li');
-    li6.innerText = 'office@autohouse.lviv.ua';
+    li6.innerText = 'office@automotive.ua';
 let li7 = document.createElement('li');
     li7.innerText = 'facebook';
     li7.onclick = function(){
@@ -505,7 +509,7 @@ let h4 = document.createElement('p');
     h4.innerText = `Ви бажаєте придбати сучасний автомобіль, але новий Вам не по кишені?`;
 let h5 = document.createElement('p');
     h5.className = 'p1';
-    h5.innerText = `«Автохаус Львів» допоможе вирішити цю проблему. Ми радимо Вам звернути увагу на вживані автомобілі з пробігом, імпортного виробництва.`;
+    h5.innerText = `Automotive Львів» допоможе вирішити цю проблему. Ми радимо Вам звернути увагу на вживані автомобілі з пробігом, імпортного виробництва.`;
 let consult = document.createElement('div');
     consult.className = 'consult';
 let h2 = document.createElement('p');
@@ -528,7 +532,7 @@ let line2 = document.createElement('div');
     line2.className = 'list2';
 let procedureH4 = document.createElement('p');
     procedureH4.className = 'p4';
-    procedureH4.innerText = 'На сайті «Автохаус Львів» є можливість детально ознайомитись із характеристиками транспортного засобу, що Вас зацікавив. Прогляньте фото автомобілів та комплектації до них, а також інформацію про рік випуску, пробіг та технічні особливості. Ви знайдете свіжі новини та відгуки наших клієнтів, що допоможе швидко зробити правильний вибір та придбати авто для себе.';
+    procedureH4.innerText = 'На сайті «Automotive Львів» є можливість детально ознайомитись із характеристиками транспортного засобу, що Вас зацікавив. Прогляньте фото автомобілів та комплектації до них, а також інформацію про рік випуску, пробіг та технічні особливості. Ви знайдете свіжі новини та відгуки наших клієнтів, що допоможе швидко зробити правильний вибір та придбати авто для себе.';
 let procedureH5 = document.createElement('p');
     procedureH5.className = 'p4 p4New';
     procedureH5.innerText = 'Усі вживані автомобілі нашого салону юридично захищені відповідними документами. Кожне авто у чудовому технічному стані та з прозорою історією експлуатації';
@@ -572,11 +576,11 @@ let line = document.createElement('div');
 let h2 = document.createElement('h2');
     h2.innerText = 'страхування та сервісне обслуговування';
 let p1 = document.createElement('h4');
-    p1.innerText = `Ми співпрацюємо із страховою компанією, що допоможе Вам оформити страхування на придбаний у «Автохаус Львів» автомобіль. При покупці автомобіля Ви гарантовано отримаєте знижку на страхування.`;
+    p1.innerText = `Ми співпрацюємо із страховою компанією, що допоможе Вам оформити страхування на придбаний у «Automotive Львів» автомобіль. При покупці автомобіля Ви гарантовано отримаєте знижку на страхування.`;
 let p2 = document.createElement('h4');
     p2.innerText = `Вам не варто хвилюватись на жодному етапі купівлі, адже професіонали автосалону на високому рівні готові надати Вам широкий спектр наступних послуг: продаж вживаних автомобілів, підготовка авто перед продажем, оформлення необхідних реєстраційних документів.`;
 let p3 = document.createElement('h4');
-    p3.innerText = `«Автохаус Львів» відповідальний перед своїми покупцями, тому ми виконуємо роботу оперативно та ефективно. Якісний сервіс – це запорука надійного порозуміння з клієнтом.`;
+    p3.innerText = `«Automotive Львів» відповідальний перед своїми покупцями, тому ми виконуємо роботу оперативно та ефективно. Якісний сервіс – це запорука надійного порозуміння з клієнтом.`;
 let p4 = document.createElement('h4');
     p4.innerText = `З нами легко підібрати потрібний автомобіль. Вдалих Вам покупок!`;
 
