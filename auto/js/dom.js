@@ -634,7 +634,7 @@ function contactsMain(){
     let phone = document.createElement('h3');
         phone.innerText = 'Телефон';
     let number = document.createElement('h4');
-        number.innerText = '+38 (096) 090 77 00';
+        number.innerText = '+38 (096) 123 45 67';
     l1.appendChild(phone);
     l1.appendChild(number);
     let addres = document.createElement('h3');
@@ -646,7 +646,7 @@ function contactsMain(){
     let mail = document.createElement('h3');
         mail.innerText = 'Email'; 
     let email = document.createElement('h4');
-        email.innerText = `office@house.lviv.ua`;
+        email.innerText = `office@automotive.ua`;
         l3.appendChild(mail); 
         l3.appendChild(email); 
     let social = document.createElement('h3');
