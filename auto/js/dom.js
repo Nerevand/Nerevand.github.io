@@ -111,6 +111,8 @@ function show(n){
 for(let i = n; i < n+4; i++){
     let block = document.createElement('div');
         block.className = 'block card'; 
+        block.setAttribute('data-toggle', 'modal');
+        block.setAttribute('data-target', '#exampleModalLong');
     let img = document.createElement('img');
         img.className = 'card-img-top';
         img.src = cars[i].preview;
@@ -129,6 +131,9 @@ for(let i = n; i < n+4; i++){
     block.appendChild(text);
     text.appendChild(model);
     text.appendChild(price); 
+    block.onclick = function(){
+        modal(cars[i].model, cars[i].preview);
+    }
 }
 }
 show(0);
@@ -186,7 +191,7 @@ function circle(n=9){
         block.appendChild(img);
         block.appendChild(text);
         text.appendChild(model);
-        text.appendChild(price);
+        text.appendChild(price); 
     }
  
 }
@@ -668,13 +673,82 @@ function contactsMain(){
 function map(){
     let map = document.createElement('iframe');
         map.className = 'map';
-        map.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.218280431775!2d23.953410538867185!3d49.78451926726345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDQ3JzA0LjMiTiAyM8KwNTcnMTguNyJF!5e0!3m2!1suk!2sua!4v1538862206225';
+        map.src = 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d643.2364515275679!2d24.026367484365313!3d49.84347580234406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x473add7258bf7bbd%3A0x8d22d75bebda3123!2z0KTQvtC90YLQsNC9INCx0ZbQu9GPINCe0L_QtdGA0L3QvtCz0L4g0YLQtdCw0YLRgNGD!3m2!1d49.8433364!2d24.0266076!4m5!1s0x473add7258bf7bbd%3A0x8d22d75bebda3123!2z0KTQvtC90YLQsNC9INCy0L7Qt9C70LUg0J7Qv9C10YDQvdC-0LPQviDRgtC10LDRgtGA0LAsINC_0YDQvtGB0L_QtdC60YIg0KHQstC-0LHQvtC00LgsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!3m2!1d49.8433364!2d24.0266076!5e0!3m2!1sru!2sua!4v1545814675858';
         map.frameBorder = 0;
         map.style = 'border:0';
-        map.zoo
+        map.zoom = 5;
         root.appendChild(map);
     }
 
+function modal(model, path){
+    let bodi = document.body;
+    let fade = document.createElement('div');
+        fade.className = 'modal fade';
+        fade.id = 'exampleModalLong';
+        fade.tabIndex = '-1';
+        fade.setAttribute('role', 'dialog');
+        fade.setAttribute('aria-labelledby', 'exampleModalLongTitle');
+        fade.setAttribute('aria-hidden', true);
+        fade.onclick = function(){
+            fade.parentNode.removeChild(fade);
+        };
+
+    let dialog = document.createElement('div');
+        dialog.className = 'modal-dialog';
+        dialog.setAttribute('role', 'document');
+
+    let content = document.createElement('div');
+        content.className = 'modal-content';
+
+    let modalHeader = document.createElement('div');
+        modalHeader.className = 'modal-header';
+    
+    let h5 = document.createElement('h5');
+        h5.className = '"modal-title';
+        h5.id = 'exampleModalLongTitle';  
+        h5.style.margin = '0 auto';
+        h5.innerHTML = model; 
+
+    let btnClose = document.createElement('button');
+        btnClose.className = 'close';
+        btnClose.type = 'button';
+        btnClose.setAttribute('data-dismiss','modal');
+        btnClose.setAttribute('aria-label','Close');
+
+    let spn = document.createElement('span');
+        spn.setAttribute('aria-hidden', true);
+        spn.innerHTML = '&times';
+
+    let modalBody = document.createElement('div');
+        modalBody.className = 'modal-body'; 
+        modalBody.style.display = 'flex';
+        modalBody.style.justifyContent = 'center';
+    
+    let img = document.createElement('img');
+        img.className = 'car-model';
+        img.src = path;
+
+    let modalFooter = document.createElement('div');
+        modalFooter.className = 'modal-footer';
+
+    let cls = document.createElement('button');
+        cls.className = 'btn btn-secondary';
+        cls.type = 'button';
+        cls.setAttribute('data-dismiss', 'modal');
+        cls.innerText = 'Close';
+
+        bodi.appendChild(fade); 
+        fade.appendChild(dialog);
+        dialog.appendChild(content);
+        content.appendChild(modalHeader);
+        modalHeader.appendChild(h5);
+        modalHeader.appendChild(btnClose);
+        btnClose.appendChild(spn);
+        content.appendChild(modalBody);
+        modalBody.appendChild(img);
+        content.appendChild(modalFooter);
+        modalFooter.appendChild(cls); 
+}
 
     window.addEventListener('load', function() {
         if (window.location.hash === '#main' || window.location.hash === '') {
