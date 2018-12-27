@@ -8,10 +8,12 @@
     <title>Barracuda</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/calendar.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <div class="logo">
             <img src="img/logo.png" alt="">
         </div>
@@ -22,7 +24,7 @@
                     <li class="number">
                         <p>
                             <span>
-                               098 80 85 063
+                                098 80 85 063
                             </span>
                             <img src="img/arrowDown.png" alt="">
                         </p>
@@ -54,8 +56,8 @@
                 </ul>
             </div>
         </div>
-    </header> 
-    
+    </header>
+
     <section class="main">
         <div class="words">
             <div class="center">
@@ -63,7 +65,8 @@
                     AJAX STREETSIREN
                 </h1>
                 <p>
-                    Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах бізнес-центру
+                    Працює на відстані до 2000 метрів від Ajax Hub на відкритому просторі або на декількох поверхах
+                    бізнес-центру
                 </p>
                 <button>ДЕТАЛЬНІШЕ &#8594;</button>
             </div>
@@ -88,7 +91,7 @@
             <p class="show-all">показати усі &#9002;</p>
         </div>
     </section>
-    
+
     <section class="digital">
         <ul id="slides">
             <li class="first slide">
@@ -106,19 +109,20 @@
                     </div>
                 </div>
                 <div class="twoBut">
-                        <button onClick="prevSlide()">
-                                &#60;&#60;
-                        </button>
-                        <button onClick="nextSlide()">
-                                &#62;&#62;
-                        </button>
+                    <button onClick="prevSlide()">
+                        &#60;&#60;
+                    </button>
+                    <button onClick="nextSlide()">
+                        &#62;&#62;
+                    </button>
                 </div>
                 <div class="details">
                     <h3>
                         Suprema Biostation L2
                     </h3>
                     <p>
-                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у світі
+                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у
+                        світі
                     </p>
                 </div>
             </li>
@@ -141,19 +145,20 @@
                     </div>
                 </div>
                 <div class="twoBut">
-                        <button onClick="prevSlide()">
-                                &#60;&#60;
-                        </button>
-                        <button onClick="nextSlide()">
-                                &#62;&#62;
-                        </button>
+                    <button onClick="prevSlide()">
+                        &#60;&#60;
+                    </button>
+                    <button onClick="nextSlide()">
+                        &#62;&#62;
+                    </button>
                 </div>
                 <div class="details">
                     <h3>
                         Suprema BioEntry Plus
                     </h3>
                     <p>
-                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у світі
+                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у
+                        світі
                     </p>
                 </div>
             </li>
@@ -176,19 +181,20 @@
                     </div>
                 </div>
                 <div class="twoBut">
-                        <button onClick="prevSlide()">
-                                &#60;&#60;
-                        </button>
-                        <button onClick="nextSlide()">
-                                &#62;&#62;
-                        </button>
+                    <button onClick="prevSlide()">
+                        &#60;&#60;
+                    </button>
+                    <button onClick="nextSlide()">
+                        &#62;&#62;
+                    </button>
                 </div>
                 <div class="details">
                     <h3>
                         Suprema Facestation 2
                     </h3>
                     <p>
-                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у світі
+                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у
+                        світі
                     </p>
                 </div>
             </li>
@@ -207,27 +213,28 @@
                     </div>
                 </div>
                 <div class="twoBut">
-                        <button onClick="prevSlide()">
-                                &#60;&#60;
-                        </button>
-                        <button onClick="nextSlide()">
-                                &#62;&#62;
-                        </button>
+                    <button onClick="prevSlide()">
+                        &#60;&#60;
+                    </button>
+                    <button onClick="nextSlide()">
+                        &#62;&#62;
+                    </button>
                 </div>
                 <div class="details">
                     <h3>
                         Suprema Xpass S2
                     </h3>
                     <p>
-                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у світі
+                        Biostation A2 нашпигований найкращим у світі процесором на 4 ядра, що забезпечує найращий у
+                        світі
                     </p>
                 </div>
             </li>
         </ul>
     </section>
-<!--____________________________________________________________________-->
-  
-        <!--  ________________________________________________________________________________________ -->
+    <!--____________________________________________________________________-->
+
+    <!--  ________________________________________________________________________________________ -->
     <section class="callback">
         <h2>
 
@@ -240,12 +247,13 @@
             <input type="text" class="remove" list="browsers" name="browser" placeholder="Вид діяльності"><br>
             <datalist id="browsers">
                 <option value="Human Resources">
-                    <option value="Senior Frontend Developer">
-                        <option value="Team Lead">
-                            <option value="Middle .Net Developer">
-                                <option value="Junior PHP Developer">
+                <option value="Senior Frontend Developer">
+                <option value="Team Lead">
+                <option value="Middle .Net Developer">
+                <option value="Junior PHP Developer">
             </datalist>
-            <input placeholder="Дата" class="remove" type="text" id="date" name="date" readonly="readonly" size="10" onclick="showcalendar(this)"/>
+            <input placeholder="Дата" class="remove" type="text" id="date" name="date" readonly="readonly" size="10"
+                onclick="showcalendar(this)" />
             <input class="last" type="text" placeholder="Повідомлення"><br>
         </form>
         <button class="send">
@@ -254,9 +262,11 @@
     </section>
 
     <section class="arrow">
-        <div class="square" onclick="topFunction()">
-            <img src="img/arrowUp.png" alt="">
+        <a href="#top" id='arrow'>
+        <div class="square">
+            <img src="img/arrowUp.png" alt="arrow">
         </div>
+    </a>
     </section>
 
     <footer>
@@ -266,7 +276,7 @@
         <div class="power">
             <div class="text">
                 <p>
-                    Зроблено  <span class="otakoyi">ВласноRooch</span>
+                    Зроблено <span class="otakoyi">ВласноRooch</span>
                 </p>
             </div>
             <div class="circles">
@@ -277,6 +287,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/links.js"></script>
 </body>
 
 </html>
