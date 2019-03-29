@@ -15,7 +15,7 @@ function bacg(n) {
         if (n === 1) {
             levelBack[i].style.backgroundColor = '#FFFF00'; // жовтий   
         } else {
-            levelBack[i + 1].style.backgroundColor = '#ff4000'; // оранж
+            levelBack[i + 1].style.backgroundColor = '#31ff25'; // оранж
             levelBack[i].style.backgroundColor = '#FFFF00'; // жовтий
         }
         x--;
@@ -299,7 +299,6 @@ ansverA.onclick = function() {
         stage = 0;
     }
     setTimeout(function() {
-        console.log(check);
         stageUp();
     }, 2300);
 }
@@ -351,7 +350,6 @@ ansverB.onclick = function() {
         stage = 0;
     }
     setTimeout(function() {
-        console.log(check);
         stageUp();
     }, 2300);
 }
@@ -403,7 +401,6 @@ ansverC.onclick = function() {
         stage = 0;
     }
     setTimeout(function() {
-        console.log(check);
         stageUp();
     }, 2300);
 }
@@ -455,7 +452,6 @@ ansverD.onclick = function() {
         stage = 0;
     }
     setTimeout(function() {
-        console.log(check);
         stageUp();
     }, 2300);
 }
